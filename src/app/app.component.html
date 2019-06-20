@@ -1,0 +1,65 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1 style = "font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+    {{ title }}
+  </h1>
+</div>
+
+<section class = "wordCount" style = "text-align: center; float: left; width: 600px;padding: 20px;">
+  <h2>Character Count System</h2>
+  <input class = "data_input" placeholder = "Enter data to count" [(ngModel)] = "DataInput"/>
+  <button class = "wordBtn" (click) = "counter()">Calculate</button>
+  <div>
+    <h3>A: {{aCount}}</h3>
+    <h3>B: {{bCount}}</h3>
+    <h3>C: {{cCount}}</h3>
+    <h3>D: {{dCount}}</h3>
+    <h3>E: {{eCount}}</h3>
+  </div>
+</section>
+
+<section class = "averageBox" style = "float: left;padding: 20px;">
+  <table style = "margin-left: 500px;width: 500px;margin-top: 20px;">
+    <tr>
+      <td><input class = "first_num" placeholder = "Enter the first number" [(ngModel)] = "firstNum"/></td>
+    </tr>
+
+    <tr>
+      <td><input class = "second_num" placeholder = "Enter the second number" [(ngModel)] = "secondNum"/></td>
+    </tr>
+
+    <tr>
+      <td><input class = "third_num" placeholder = "Enter the third number" [(ngModel)] = "thirdNum"/></td>
+    </tr>
+
+    <tr>
+      <td><input class = "fourth_num" placeholder = "Enter the fourth number" [(ngModel)] = "fourthNum"/></td>
+    </tr>
+
+    <tr>
+      <td><input class = "fifth_num" placeholder = "Enter the fifth number" [(ngModel)] = "fifthNum"/></td>
+    </tr>
+
+    <tr>
+      <td>
+        <button class = "averageBtn" (click) = "calculate()">Average</button>
+        <button class = "HighLowBtn" (click) = "highest()">Min/Max</button>
+      </td>
+    </tr>
+    <tr>
+      <td><h3>Average:</h3></td>
+      <td><h3>{{average}}</h3></td>
+    </tr>
+
+    <tr>
+      <td><h3>Maximum Number:</h3></td>
+      <td><h3>{{highestNum}}</h3></td>
+    </tr>
+
+    <tr>
+      <td><h3>Minimum Number:</h3></td>
+      <td><h3>{{lowestNum}}</h3></td>
+    </tr>
+  </table>
+</section>
+<router-outlet></router-outlet>

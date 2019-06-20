@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@charset "UTF-8";
+body {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-image: url(assets/animal-clouds-cloudy-395196.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.5);
+}
